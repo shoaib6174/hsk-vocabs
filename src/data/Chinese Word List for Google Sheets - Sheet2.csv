@@ -1,0 +1,269 @@
+Hanzi,Pinyin,English,Category,Level,Lesson
+一,yī,one,Numbers,1,
+二,èr,two,Numbers,1,
+三,sān,three,Numbers,1,
+四,sì,four,Numbers,1,
+五,wǔ,five,Numbers,1,
+六,liù,six,Numbers,1,
+七,qī,seven,Numbers,1,
+八,bā,eight,Numbers,1,
+九,jiǔ,nine,Numbers,1,
+十,shí,ten,Numbers,1,
+零,líng,zero,Numbers,1,
+我,wǒ,I; me,Pronouns,1,
+你,nǐ,you,Pronouns,1,
+他,tā,he; him,Pronouns,1,
+她,tā,she; her,Pronouns,1,
+我们,wǒmen,we; us,Pronouns,1,
+这,zhè,this,Pronouns,1,
+那,nà,that,Pronouns,1,
+哪,nǎ,which,Pronouns/Question,1,
+哪儿,nǎr,where,Pronouns/Question,1,
+谁,shéi,who,Pronouns/Question,1,
+什么,shénme,what,Pronouns/Question,1,
+多少,duōshǎo,how much; how many,Numbers/Question,1,
+几,jǐ,how many (small),Numbers/Question,1,
+怎么,zěnme,how,Pronouns/Question,1,
+怎么样,zěnmeyàng,how about,Pronouns/Question,1,
+个,gè,general measure word,Grammar,1,
+岁,suì,years old,Grammar/Time,1,
+本,běn,measure word (books),Grammar,1,
+些,xiē,some; few,Grammar,1,
+块,kuài,unit of money; piece,Grammar,1,
+不,bù,not,Grammar,1,
+没,méi,not (have),Grammar,1,
+很,hěn,very,Adjectives,1,
+太,tài,too; extremely,Adjectives,1,
+都,dōu,all; both,Adverbs,1,
+和,hé,and,Grammar,1,
+在,zài,at; in; on,Grammar/Verbs,1,
+的,de,possessive particle,Grammar,1,
+了,le,aspect particle,Grammar,1,
+吗,ma,question particle,Grammar,1,
+呢,ne,aspect particle,Grammar,1,
+喂,wèi,hello (phone),Polite,1,
+家,jiā,home; family,Places/People,1,
+学校,xuéxiào,school,Places,1,
+饭馆,fànguǎn,restaurant,Places,1,
+商店,shāngdiàn,shop,Places,1,
+医院,yīyuàn,hospital,Places,1,
+火车站,huǒchēzhàn,railway station,Places,1,
+中国,zhōngguó,China,Places,1,
+北京,běijīng,Beijing,Places,1,
+上,shàng,up; above,Directions,1,
+下,xià,down; below,Directions,1,
+前,qián,front; before,Directions,1,
+后,hòu,back; behind,Directions,1,
+里,lǐ,inside,Directions,1,
+今天,jīntiān,today,Time,1,
+明天,míntiān,tomorrow,Time,1,
+昨天,zuótiān,yesterday,Time,1,
+上午,shàngwǔ,morning,Time,1,
+中午,zhōngwǔ,noon,Time,1,
+下午,xiàwǔ,afternoon,Time,1,
+年,nián,year,Time,1,
+月,yuè,month,Time,1,
+号,hào,date; number,Time,1,
+星期,xīngqī,week,Time,1,
+点,diǎn,o'clock,Time,1,
+分钟,fēnzhōng,minute,Time,1,
+现在,xiànzài,now,Time,1,
+时候,shíhou,time; moment,Time,1,
+爸爸,bàba,dad,People,1,
+妈妈,māma,mom,People,1,
+儿子,érzi,son,People,1,
+女儿,nǚ'ér,daughter,People,1,
+老师,lǎoshī,teacher,People,1,
+学生,xuésheng,student,People,1,
+同学,tóngxué,classmate,People,1,
+朋友,péngyou,friend,People,1,
+医生,yīshēng,doctor,People,1,
+先生,xiānsheng,Mr.; sir,People,1,
+小姐,xiǎojiě,Miss; young lady,People,1,
+衣服,yīfu,clothes,Objects,1,
+水,shuǐ,water,Food/Drink,1,
+菜,cài,dish; vegetable,Food/Drink,1,
+米饭,mǐfàn,cooked rice,Food/Drink,1,
+水果,shuǐguǒ,fruit,Food/Drink,1,
+苹果,píngguǒ,apple,Food/Drink,1,
+茶,chá,tea,Food/Drink,1,
+杯子,bēizi,cup,Objects,1,
+钱,qián,money,Objects,1,
+飞机,fēijī,airplane,Travel,1,
+出租车,chūzūchē,taxi,Travel,1,
+电视,diànshì,television,Objects,1,
+电脑,diànnǎo,computer,Objects,1,
+电影,diànyǐng,movie,Objects,1,
+书,shū,book,Objects,1,
+桌子,zhuōzi,table,Objects,1,
+椅子,yǐzi,chair,Objects,1,
+谢谢,xièxie,thank you,Polite,1,
+不客气,búkèqi,you're welcome,Polite,1,
+再见,zàijiàn,goodbye,Polite,1,
+请,qǐng,please,Polite,1,
+对不起,duìbuqǐ,sorry,Polite,1,
+没关系,méiguānxi,no problem,Polite,1,
+是,shì,to be,Verbs,1,
+有,yǒu,to have,Verbs,1,
+看,kàn,to look; watch,Verbs,1,
+听,tīng,to listen,Verbs,1,
+说,shuō,to speak,Verbs,1,
+读,dú,to read,Verbs,1,
+写,xiě,to write,Verbs,1,
+看见,kànjiàn,to see,Verbs,1,
+叫,jiào,to be called,Verbs,1,
+来,lái,to come,Verbs,1,
+去,qù,to go,Verbs,1,
+回,huí,to return,Verbs,1,
+想,xiǎng,to want; think,Verbs,1,
+吃,chī,to eat,Verbs,1,
+喝,hē,to drink,Verbs,1,
+睡觉,shuìjiào,to sleep,Verbs,1,
+打电话,dǎdiànhuà,to phone,Verbs,1,
+做,zuò,to do,Verbs,1,
+买,mǎi,to buy,Verbs,1,
+开,kāi,to open; drive,Verbs,1,
+坐,zuò,to sit,Verbs,1,
+住,zhù,to live,Verbs,1,
+学习,xuéxí,to study,Verbs,1,
+工作,gōngzuò,to work,Verbs,1,
+下雨,xiàyǔ,to rain,Verbs,1,
+爱,ài,to love,Verbs,1,
+喜欢,xǐhuan,to like,Verbs,1,
+认识,rènshi,to know (someone),Verbs,1,
+会,huì,can; will,Verbs,1,
+能,néng,can; be able to,Verbs,1,
+好,hǎo,good,Adjectives,1,
+大,dà,big,Adjectives,1,
+小,xiǎo,small,Adjectives,1,
+多,duō,many,Adjectives,1,
+少,shǎo,few,Adjectives,1,
+冷,lěng,cold,Adjectives,1,
+热,rè,hot,Adjectives,1,
+高兴,gāoxìng,happy,Adjectives,1,
+漂亮,piàoliang,pretty,Adjectives,1,
+您,nín,you (formal),Pronouns,2,1
+它,tā,it,Pronouns,2,1
+每,měi,every,Pronouns,2,14
+为什么,wèishénme,why,Pronouns/Question,2,6
+也,yě,also,Adverbs,2,1
+再,zài,again,Adverbs,2,10
+真,zhēn,really,Adverbs,2,2
+都,dōu,already (in some contexts),Adverbs,2,1
+最,zuì,most,Adverbs,2,1
+经常,jīngcháng,often,Adverbs,2,7
+非常,fēicháng,very; extremely,Adverbs,2,5
+已经,yǐjīng,already,Adverbs,2,5
+就,jiù,just; then,Adverbs,2,3
+两,liǎng,two,Numbers,2,1
+第一,dì-yī,first,Numbers,2,2
+次,cì,time (measure word),Grammar,2,11
+件,jiàn,measure word (clothes),Grammar,2,13
+下,xià,time (measure word),Grammar,2,11
+因为,yīnwèi,because,Grammar,2,6
+所以,suǒyǐ,so,Grammar,2,6
+但是,dànshì,but,Grammar,2,12
+虽然,suīrán,although,Grammar,2,12
+如果,rúguǒ,if,Grammar,2,12
+还是,háishi,or,Grammar,2,12
+从,cóng,from,Grammar,2,10
+到,dào,to; arrive,Grammar/Verbs,2,10
+向,xiàng,towards,Grammar,2,13
+离,lí,away from,Grammar,2,8
+吧,ba,suggestion particle,Grammar,2,1
+让,ràng,let; allow,Verbs/Grammar,2,10
+给,gěi,to give; for,Verbs/Grammar,2,4
+等,děng,to wait,Verbs,2,8
+觉得,juéde,to think; feel,Verbs,2,2
+找,zhǎo,to look for,Verbs,2,1
+希望,xīwàng,to hope,Verbs,2,12
+懂,dǒng,to understand,Verbs,2,1
+准备,zhǔnbèi,to prepare,Verbs,2,4
+开始,kāishǐ,to start,Verbs,2,10
+结束,jiéshù,to end,Verbs,2,10
+帮助,bāngzhù,to help,Verbs,2,7
+旅游,lǚyóu,to travel,Verbs,2,1
+介绍,jièshào,to introduce,Verbs,2,10
+送,sòng,to give; deliver,Verbs,2,1
+告诉,gàosu,to tell,Verbs,2,4
+欢迎,huānyíng,welcome,Verbs,2,1
+唱歌,chànggē,to sing,Verbs,2,11
+跳舞,tiàowǔ,to dance,Verbs,2,11
+跑步,pǎobù,to run,Verbs,2,5
+游泳,yóuyǒng,to swim,Verbs,2,10
+打篮球,dǎ lánqiú,play basketball,Verbs,2,10
+踢足球,tī zúqiú,play football,Verbs,2,10
+考试,kǎoshì,exam,Verbs,2,8
+生病,shēngbìng,to fall ill,Verbs,2,5
+休息,xiūxi,to rest,Verbs,2,5
+出,chū,to go out,Verbs,2,11
+进,jìn,to enter,Verbs,2,1
+走,zǒu,to walk,Verbs,2,11
+穿,穿,to wear,Verbs,2,13
+洗,xǐ,to wash,Verbs,2,14
+笑,xiào,to laugh,Verbs,2,14
+玩,wán,to play,Verbs,2,14
+意思,yìsi,meaning,Nouns,2,14
+课,kè,class; lesson,Nouns,2,7
+题,tí,question; problem,Nouns,2,7
+哥哥,gēge,older brother,People,2,13
+姐姐,jiějie,older sister,People,2,13
+弟弟,dìdi,younger brother,People,2,14
+妹妹,mèimei,younger sister,People,2,14
+丈夫,zhàngfu,husband,People,2,2
+妻子,qīzi,wife,People,2,13
+孩子,háizi,child,People,2,13
+服务员,fúwùyuán,waiter,People,2,2
+男人,nánrén,man,People,2,13
+女人,nǚrén,woman,People,2,13
+咖啡,kāfēi,coffee,Food/Drink,2,3
+牛奶,niúnǎi,milk,Food/Drink,2,6
+鸡蛋,jīdàn,egg,Food/Drink,2,6
+西瓜,xīguā,watermelon,Food/Drink,2,6
+羊肉,yángròu,mutton,Food/Drink,2,6
+药,yào,medicine,Objects,2,5
+报纸,bàozhǐ,newspaper,Objects,2,3
+票,piào,ticket,Objects,2,11
+自行车,zìxíngchē,bicycle,Objects,2,11
+船,chuán,boat; ship,Objects,2,11
+手机,shǒujī,phone,Objects,2,9
+手表,shǒubiǎo,watch,Objects,2,1
+公司,gōngsī,company,Places,2,10
+机场,jīchǎng,airport,Places,2,11
+教室,jiàoshì,classroom,Places,2,9
+路,lù,road,Places,2,11
+右边,yòubian,right side,Directions,2,8
+左边,zuǒbian,left side,Directions,2,8
+旁边,pángbiān,beside,Directions,2,2
+后面,hòumian,behind,Directions,2,2
+上面,shàngmiàn,on top,Directions,2,1
+外面,wàimiàn,outside,Directions,2,6
+小时,xiǎoshí,hour,Time,2,10
+时间,shíjiān,time,Time,2,10
+早上,zǎoshang,early morning,Time,2,5
+晚上,wǎnshang,evening,Time,2,4
+去年,qùnián,last year,Time,2,3
+生日,shēngrì,birthday,Time,2,4
+身体,shēntǐ,body; health,Nouns,2,5
+眼睛,yǎnjing,eye,Nouns,2,14
+晴,qíng,sunny,Weather,2,12
+阴,yīn,cloudy,Weather,2,12
+雪,xuě,snow,Weather,2,12
+零,líng,zero,Numbers,2,
+百,bǎi,hundred,Numbers,2,14
+千,qiān,thousand,Numbers,2,14
+贵,guì,expensive,Adjectives,2,14
+便宜,piányi,cheap,Adjectives,2,14
+快,kuài,fast,Adjectives,2,9
+慢,màn,slow,Adjectives,2,14
+忙,máng,busy,Adjectives,2,3
+累,lèi,tired,Adjectives,2,4
+远,yuǎn,far,Adjectives,2,8
+近,jìn,near,Adjectives,2,8
+长,cháng,long,Adjectives,2,14
+新,xīn,new,Adjectives,2,1
+红,hóng,red,Adjectives,2,14
+白,bái,white,Adjectives,2,14
+黑,hēi,black,Adjectives,2,14
+快乐,kuàilè,happy,Adjectives,2,11
+可能,kěnéng,maybe; possible,Adverbs,2,12
