@@ -141,8 +141,8 @@ export const Quiz: React.FC<{ words: Word[] }> = ({ words }) => {
         <div className="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style={{ width: `${((currentQIndex) / questions.length) * 100}%` }}></div>
       </div>
 
-      <div className="text-center mb-10">
-        <h2 className="text-5xl font-bold text-gray-900 mb-2">{currentQ.questionText}</h2>
+      <div className="text-center mb-8 md:mb-10">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2 break-words">{currentQ.questionText}</h2>
         <p className="text-gray-500 text-sm">Select the correct translation</p>
       </div>
       
