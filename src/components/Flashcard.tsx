@@ -5,26 +5,37 @@ export const Flashcard: React.FC<{ words: Word[] }> = ({ words }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [frontSide, setFrontSide] = useState<'hanzi' | 'pinyin' | 'english'>('hanzi');
+  const [isShuffled, setIsShuffled] = useState(false);
+  const [displayWords, setDisplayWords] = useState<Word[]>(words);
 
-  // Reset when words change (e.g. filter change)
+  // Handle words update and shuffling
   useEffect(() => {
+    let newWords = [...words];
+    if (isShuffled) {
+      // Fisher-Yates shuffle
+      for (let i = newWords.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newWords[i], newWords[j]] = [newWords[j], newWords[i]];
+      }
+    }
+    setDisplayWords(newWords);
     setCurrentIndex(0);
     setIsFlipped(false);
-  }, [words]);
+  }, [words, isShuffled]);
 
   const handleNext = useCallback(() => {
     setIsFlipped(false);
     setTimeout(() => {
-      setCurrentIndex(prev => (prev + 1) % words.length);
+      setCurrentIndex(prev => (prev + 1) % displayWords.length);
     }, 150); // slight delay for visual smoothness
-  }, [words.length]);
+  }, [displayWords.length]);
 
   const handlePrev = useCallback(() => {
     setIsFlipped(false);
     setTimeout(() => {
-        setCurrentIndex(prev => (prev - 1 + words.length) % words.length);
+        setCurrentIndex(prev => (prev - 1 + displayWords.length) % displayWords.length);
     }, 150);
-  }, [words.length]);
+  }, [displayWords.length]);
 
   // Keyboard support
   useEffect(() => {
@@ -44,13 +55,13 @@ export const Flashcard: React.FC<{ words: Word[] }> = ({ words }) => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [handleNext, handlePrev]);
 
-  if (words.length === 0) return (
+  if (displayWords.length === 0) return (
     <div className="flex flex-col items-center justify-center h-full text-gray-500">
         <p className="text-xl">No words match filtering criteria</p>
     </div>
   );
 
-  const currentWord = words[currentIndex];
+  const currentWord = displayWords[currentIndex];
   // Determine front and back content
   let frontContent: React.ReactNode = '';
   let backContent: React.ReactNode = '';
@@ -85,25 +96,37 @@ export const Flashcard: React.FC<{ words: Word[] }> = ({ words }) => {
   return (
     <div className="flex flex-col items-center justify-center p-4 md:p-8 h-full bg-gray-50">
       <div className="mb-8 flex flex-col items-center gap-3">
-        <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
-           <span className="text-sm font-medium text-gray-700 mr-2">Show first:</span>
-           <div className="flex space-x-1">
-              {(['hanzi', 'pinyin', 'english'] as const).map(side => (
-                  <button
-                    key={side}
-                    onClick={() => { setFrontSide(side); setIsFlipped(false); }}
-                    className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide transition-colors ${
-                       frontSide === side 
-                       ? 'bg-blue-600 text-white' 
-                       : 'text-gray-500 hover:bg-gray-100'
-                    }`}
-                  >
-                    {side}
-                  </button>
-              ))}
-           </div>
+        <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
+             <span className="text-sm font-medium text-gray-700 mr-2">Show first:</span>
+             <div className="flex space-x-1">
+                {(['hanzi', 'pinyin', 'english'] as const).map(side => (
+                    <button
+                      key={side}
+                      onClick={() => { setFrontSide(side); setIsFlipped(false); }}
+                      className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide transition-colors ${
+                         frontSide === side 
+                         ? 'bg-blue-600 text-white' 
+                         : 'text-gray-500 hover:bg-gray-100'
+                      }`}
+                    >
+                      {side}
+                    </button>
+                ))}
+             </div>
+          </div>
+          
+          <label className="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200 transition-colors hover:bg-gray-50 select-none">
+            <input 
+              type="checkbox" 
+              checked={isShuffled} 
+              onChange={() => setIsShuffled(!isShuffled)}
+              className="rounded text-blue-600 focus:ring-blue-500 h-4 w-4"
+            />
+            <span className="text-sm font-medium text-gray-700">Shuffle</span>
+          </label>
         </div>
-        <span className="text-gray-400 text-sm">{currentIndex + 1} of {words.length}</span>
+        <span className="text-gray-400 text-sm">{currentIndex + 1} of {displayWords.length}</span>
       </div>
 
       <div 
