@@ -9,9 +9,11 @@ interface SidebarProps {
     lessons: number[];
     topics: string[];
   };
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters, filterOptions }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters, filterOptions, isOpen, onClose }) => {
   const toggleFilter = <K extends keyof FilterState>(
     key: K, 
     value: FilterState[K][number]
@@ -27,8 +29,30 @@ export const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters, filterOpt
   };
 
   return (
-    <div className="w-64 bg-gray-50 p-6 h-screen sticky top-0 border-r border-gray-200 shadow-sm flex-shrink-0 overflow-y-auto">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">Filters</h2>
+    <>
+      {/* Mobile Overlay */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          onClick={onClose}
+        />
+      )}
+      
+      {/* Sidebar */}
+      <div className={`
+        fixed inset-y-0 left-0 z-50 w-64 bg-gray-50 p-6 h-full border-r border-gray-200 shadow-sm 
+        transform transition-transform duration-300 ease-in-out
+        lg:translate-x-0 lg:static lg:h-screen lg:sticky lg:top-0
+        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-bold text-gray-800">Filters</h2>
+          <button onClick={onClose} className="lg:hidden text-gray-500 hover:text-gray-700">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       
       <div className="mb-6">
         <label className="block text-sm font-semibold text-gray-700 mb-2">HSK Level</label>
@@ -94,6 +118,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters, filterOpt
             {filters.topics.length > 0 ? ` ${filters.topics.length} topics` : ' All Topics'}
          </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };

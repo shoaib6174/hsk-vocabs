@@ -13,10 +13,10 @@ export const WordList: React.FC<{ words: Word[] }> = ({ words }) => {
   );
 
   return (
-    <div className="p-6 max-w-5xl mx-auto">
-      <div className="bg-white p-4 rounded-lg shadow-sm mb-6 border border-gray-200 flex items-center justify-between">
+    <div className="p-4 md:p-6 max-w-5xl mx-auto pb-20 md:pb-6">
+      <div className="bg-white p-4 rounded-lg shadow-sm mb-6 border border-gray-200 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <h2 className="text-lg font-semibold text-gray-800">Vocabulary List</h2>
-        <div className="flex gap-6">
+        <div className="flex gap-6 w-full md:w-auto">
           <label className="flex items-center space-x-2 cursor-pointer">
             <input type="checkbox" checked={showPinyin} onChange={() => setShowPinyin(!showPinyin)} className="rounded text-blue-600 focus:ring-blue-500 h-4 w-4" />
             <span className="text-gray-700">Show Pinyin</span>
@@ -28,7 +28,7 @@ export const WordList: React.FC<{ words: Word[] }> = ({ words }) => {
         </div>
       </div>
       
-      <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
+      <div className="overflow-x-auto shadow ring-1 ring-black ring-opacity-5 rounded-lg">
         <table className="min-w-full bg-white divide-y divide-gray-300">
           <thead className="bg-gray-50">
             <tr>
